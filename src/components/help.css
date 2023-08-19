@@ -1,0 +1,246 @@
+.bhoomiscore-wrapper{
+    width: 18vw;
+height: 100%;
+/* padding: 1.5%; */
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #2D9C74;
+}
+.bhoomi-header{
+    display: flex;
+justify-content: space-between;
+}
+.bhoomi-header h1{
+    margin-left: 0.5vw;
+    color: #FFF;
+font-family: 'Poppins';
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.header-right h2{
+    color: #F0F1F6;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 18px;
+   margin-right: 0.8vw;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.score {
+    color: #F0F1F6;
+    font-family: 'Poppins';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #F0F1F6;
+    margin-left: 1vw;
+}
+.img-containerwheat {
+    display: flex;
+    width: 1.5vw;
+    height: 3vh;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.20);
+    margin-top: 1vh;
+}
+
+.soil-wrapper {
+    width: 18vw;
+    height: 100%;
+    /* padding: 1.5%; */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #fff;
+  }
+  .soil-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .soil-header h1 {
+    margin-left: 0.5vw;
+    color: #45464e;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .soil-score {
+    color: #5fb15d;
+    font-family: "Poppins";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 1vw;
+    margin-top: -10px;
+  }
+  
+  .soil-line {
+    height: 6px;
+    align-self: stretch;
+    border-radius: 100px;
+    background: linear-gradient(270deg, #2d9c74 0%, #e6ea1e 51.36%, #ff5858 100%);
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0.4vh;
+  }
+
+  .weather-header h1 {
+    color: var(--black-60, #45464e);
+    font-family: "Poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .weather-header {
+    text-align: center;
+  }
+  /* DateInput.css */
+  
+  /* Style the label */
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
+  /* Style the date input */
+  input[type="date"] {
+    font-size: 12px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+  }
+  
+  /* Remove the default arrow icon in Chrome */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  
+  /* Add a custom calendar icon */
+  input[type="date"]::after {
+    content: "\f073"; /* Font Awesome calendar icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: relative;
+    top: 1px;
+    right: 25px;
+    color: #999;
+    pointer-events: none;
+  }
+  
+  .weather-header p {
+    color: #a1a1a1;
+    font-family: "Lato";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: -10px;
+  }
+  .weatherdata {
+    color: #45464e;
+    font-family: "Lato";
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -13px;
+  }
+  .dataa {
+    color: #5570f1;
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .hori-line {
+    height: 1px;
+    opacity: 0.5;
+    background: #d2d2d2;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .Weather-container {
+    background: #fff;
+    padding-top: 1%;
+    border-radius: 12px;
+    height: 31.7vh;
+  }
+  .weather-footer {
+    display: flex;
+    margin-top: 2vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 12px;
+    text-align: center;
+    background: #fff;
+  }
+
+  .chart-wrapper{ 
+    /* margin: '-20px'; */
+     position: 'relative';
+}
+.chart-wrapper h3{
+    text-align: center;
+    color: var(--black-60, #45464E);
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.Line-Wrapper {
+    border-radius: 12px;
+    background: #fff;
+    font-family: "Poppins";
+    height: 36.3vh;
+  }
+  
+  .Line-Wrapper p {
+    color: var(--black-60, #45464e);
+    font-family: "Poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .chart_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 20px;
+  }
+  .id_select > select {
+    color: #a1a1a1;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    height: 3vh;
+    border: none;
+    margin: 15px 0;
+  }
+  
+  

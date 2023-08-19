@@ -1,10 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./App.css"
-import Score from "./components/Score";
-import SoilHealth from "./components/SoilHealth";
-import Weather from "./components/Weather";
-import DoughnutChart from "./components/DoughnutChart";
-import LineChartComponent from "./components/LineChart";
  
 
 const CoordinateMap = () => {
@@ -32,7 +26,7 @@ const CoordinateMap = () => {
         };
 
         setSelectedCoordinate(clickedLatLng);
-       
+        setList(clickedLatLng);
       });
     }
   }, [map]);
@@ -46,7 +40,8 @@ const CoordinateMap = () => {
       });
 
       setMarkers((prevMarkers) => [...prevMarkers, newMarker]);
-      
+      // console.log(markers)
+      // console.log(markers[1].position)
       
     }
   }, [selectedCoordinate, map]);
@@ -75,7 +70,7 @@ const CoordinateMap = () => {
 
   // console.log(markers)
   const coord = markers.map((x)=>x.position)
-  
+  console.log(coord)
 
   const bermudaTriangle = new window.google.maps.Polygon({
     paths: coord,
@@ -93,10 +88,7 @@ const CoordinateMap = () => {
 
   return (
     <>
-    <div className="home-container">  
-      <div ref={mapRef} style={{ width: "100%", height: "calc(100vh - 100px)" }} className={
-            (markers.length>2) ? "home-left" : "home-left home-left-only"
-          }></div>
+      <div ref={mapRef} style={{ width: "100%", height: "calc(100vh - 100px)" }}></div>
       {selectedCoordinate && (
         <div
           style={{
@@ -135,33 +127,7 @@ const CoordinateMap = () => {
           </span>
         </div>
       )}
-
-      <div
-          className={`animated-component ${
-            (markers.length>2) ? "home-right" : ""
-          }`}
-        >
-          {(markers.length>2) ? (
-            <>
-              <div className="top_right_container">
-                <Score />
-                <SoilHealth/>
-              </div>
-              <div className="chart-weather">
-                <div className="weather-comp">
-                  <Weather />{" "}
-                </div>
-                <div className="chart-comp">
-                  <DoughnutChart />
-                </div>
-              </div>
-              <LineChartComponent/>
-            </>
-          ):<></>}
-        </div> 
-
       
-    </div>  
     </>
   );
 };
