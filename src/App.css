@@ -1,6 +1,6 @@
 .box{
     display: flex;
-    
+
 }
 
 .home-container {
@@ -27,8 +27,8 @@
     }
   }
   
-  .slide-out {
-  }
+  /* .slide-out {
+  } */
   
   .home-right {
     animation: slideOut 1s ease-out;

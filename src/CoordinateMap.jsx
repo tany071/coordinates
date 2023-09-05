@@ -138,10 +138,10 @@ const CoordinateMap = () => {
 
       <div
           className={`animated-component ${
-            (markers.length>2) ? "home-right" : ""
+            (markers.length>3) ? "home-right" : ""
           }`}
         >
-          {(markers.length>2) ? (
+          {(markers.length>3) ? (
             <>
               <div className="top_right_container">
                 <Score />
